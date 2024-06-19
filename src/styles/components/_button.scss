@@ -1,0 +1,26 @@
+.btn-container {
+  @include phone(699px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    .btn-title {
+      margin: 0.5rem 0;
+    }
+    .prm-btn {
+      width: 100%;
+      min-height: 2.5rem;
+      background: $primary-color;
+      border: none;
+      border-radius: 0.3rem;
+      color: white;
+      @include p-r;
+      @include padding-x(1rem);
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  background-color: $menu-color;
+  width: 100%;
+  @include padding-x(0.5rem);
+  @include padding-y(1rem);
+  @include p-r;
+  h1 {
+    @include p-l;
+    margin: 0;
+  }
+}

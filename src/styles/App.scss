@@ -1,0 +1,23 @@
+@import "./common/index";
+@import "./views/index";
+@import "./components/index";
+
+body {
+  color: black;
+  margin: 0;
+  background-color: $body-color;
+
+  #root {
+    font-size: 16px;
+    position: relative;
+    @include p-r;
+    @include phone(699px) {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /*       align-items: center; */
+      
+    }
+  }
+}

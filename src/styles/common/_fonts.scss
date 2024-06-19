@@ -1,0 +1,98 @@
+$font-family-poppins: "Poppins", sans-serif;
+
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// Poppins
+@mixin p-xl {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-extra-light;
+}
+
+@mixin p-xl-i {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-extra-light;
+  font-style: italic;
+}
+@mixin p-l {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-light;
+}
+
+@mixin p-l-i {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-light;
+  font-style: italic;
+}
+
+@mixin p-r {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-regular;
+}
+
+@mixin p-r-i {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-regular;
+  font-style: italic;
+}
+
+@mixin p-m {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-medium;
+}
+
+@mixin p-m-i {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-medium;
+  font-style: italic;
+}
+
+@mixin p-sb {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-semi-bold;
+}
+
+@mixin p-sb-i {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-semi-bold;
+  font-style: italic;
+}
+
+@mixin p-b {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-bold;
+}
+
+@mixin p-b-i {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+
+@mixin p-xb {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-extra-bold;
+}
+
+@mixin p-xb-i {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-extra-bold;
+  font-style: italic;
+}
+
+@mixin p-bl {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-black;
+}
+
+@mixin p-bl-i {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-black;
+  font-style: italic;
+}
