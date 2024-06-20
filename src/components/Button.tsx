@@ -14,7 +14,7 @@ const Button: React.FC<Props> = ({
   onClick,
 }) => {
   return (
-    <div className="btn-container">
+    <div className="btn-content">
       {title ? <h2 className={`btn-title ${titleClass}`}>{title}</h2> : <h2 className="btn-title">Sound One</h2>}
       <button className={`prm-btn ${className}`} onClick={onClick}>
         {text}

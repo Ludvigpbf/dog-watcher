@@ -6,9 +6,54 @@ type Props = {};
 const Landing: React.FC<Props> = () => {
   return (
     <section className="landing-section">
-      <h1>Landing</h1>
-      <Feed />
-      <Button title="" text="Play" />
+      <div className="feed-container">
+        <Feed />
+      </div>
+      <div className="btn-container">
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+        <Button title="" text="Play" />
+      </div>
     </section>
   );
 };

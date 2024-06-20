@@ -1,11 +1,10 @@
 .footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background-color: $menu-color;
   @include padding-x(0.5rem);
   @include padding-y(1rem);
   h1 {
+   width: 90%;
     margin: 0;
   }
 }
