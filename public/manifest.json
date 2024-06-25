@@ -1,0 +1,37 @@
+{
+  "name": "Dog Watcher App",
+  "short_name": "Dog Watcher",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3f51b5",
+  "orientation": "portrait",
+  "scope": "/",
+  "id": "/",
+  "description": "A application to help you keep track of your dog",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/prnt-screen-dog-watcher-desktop.png",
+      "sizes": "1924x1072",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/prnt-screen-dog-watcher-mobile.png",
+      "sizes": "389x841",
+      "type": "image/png"
+    }
+  ]
+}

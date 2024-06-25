@@ -6,6 +6,18 @@ import { Provider } from "react-redux";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import store from "@redux/store.ts";
 import NotFound from "@views/NotFound.tsx";
+import { registerSW } from "virtual:pwa-register";
+
+const updateSW = registerSW({
+  onNeedRefresh() {
+    // Notify user about the update
+    console.log("New content available, please refresh.");
+  },
+  onOfflineReady() {
+    // Notify user that app is ready to work offline
+    console.log("App is ready to work offline.");
+  },
+});
 
 const router = createBrowserRouter([
   {
@@ -33,3 +45,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <RouterProvider router={router} />
 );
+
+updateSW();

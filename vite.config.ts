@@ -1,10 +1,33 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: "autoUpdate",
+      devOptions: {
+        enabled: true,
+      },
+      /*  includeAssets: ["favicon.svg", "robots.txt", "apple-touch-icon.png"], */
+      manifest: {
+        name: "Dog Watcher App",
+        short_name: "Dog Watcher",
+        description: "A application to help you keep track of your dog",
+        theme_color: "#3f51b5",
+        icons: [
+          {
+            src: "favicon.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+        ],
+      },
+    }),
+  ],
   resolve: {
     alias: {
       "@components": path.resolve(__dirname, "src/components"),

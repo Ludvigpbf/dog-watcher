@@ -31,6 +31,6 @@
       "@interfaces/*": ["src/interface/*"],
     }
   },
-  "include": ["src", "lang"],
+  "include": ["src", "lang", "vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

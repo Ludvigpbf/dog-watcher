@@ -52,7 +52,7 @@ const Feed: React.FC<Props> = () => {
     }, 1000);
 
     // Create WebSocket connection.
-    ws = new WebSocket("ws://localhost:8080");
+    ws = new WebSocket("ws://localhost:5173");
 
     // Connection opened
     ws.addEventListener("open", () => {
