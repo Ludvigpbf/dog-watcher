@@ -1,12 +1,13 @@
 .header {
   background-color: $menu-color;
   width: 100%;
-  @include padding-x(0.5rem);
-  @include padding-y(1rem);
+  display: flex;
   @include p-r;
   h1 {
     @include p-l;
     margin: 0;
-    width: 90%;
+    width: 100%;
+    @include padding-x(0.5rem);
+    @include padding-y(1rem);
   }
 }

@@ -17,10 +17,7 @@
 .header {
   background-color: rgb(214, 221, 224);
   width: 100%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  display: flex;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -28,20 +25,25 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   margin: 0;
-  width: 90%;
-}
-
-.footer {
   width: 100%;
-  background-color: rgb(214, 221, 224);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+.footer {
+  width: 100%;
+  background-color: rgb(214, 221, 224);
+  display: flex;
+}
 .footer h1 {
-  width: 90%;
+  width: 100%;
   margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .btn-container {

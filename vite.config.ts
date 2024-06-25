@@ -17,4 +17,8 @@ export default defineConfig({
       "@interfaces": path.resolve(__dirname, "src/interfaces"),
     },
   },
+  server: {
+    host: "0.0.0.0",
+    port: 5173,
+  },
 });
