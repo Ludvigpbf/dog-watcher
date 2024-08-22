@@ -7,6 +7,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import store from "@redux/store.ts";
 import NotFound from "@views/NotFound.tsx";
 import { registerSW } from "virtual:pwa-register";
+import Feed from "@views/Feed.tsx";
+import "@locales/i18n.tsx";
+import NewAudio from "@components/NewAudio.tsx";
 
 const updateSW = registerSW({
   onNeedRefresh() {
@@ -33,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Landing />,
+      },
+      {
+        path: "/feed",
+        element: <Feed />,
+      },
+      {
+        path: "/new-audio",
+        element: <NewAudio />,
       },
       {
         path: "*",

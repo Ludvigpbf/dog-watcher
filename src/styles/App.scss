@@ -10,14 +10,12 @@ body {
   #root {
     font-size: 16px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     @include p-r;
     @include phone(699px) {
       font-size: 14px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      /*       align-items: center; */
-      
     }
   }
 }

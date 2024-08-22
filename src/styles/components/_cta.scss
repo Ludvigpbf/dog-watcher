@@ -1,0 +1,21 @@
+.cta-box {
+  width: 4rem;
+  height: 4rem;
+  .cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(191, 191, 191);
+    .icon{
+      img{
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}

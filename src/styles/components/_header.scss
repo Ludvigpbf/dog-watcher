@@ -1,7 +1,10 @@
 .header {
   background-color: $menu-color;
   width: 100%;
+  height: 4rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   @include p-r;
   h1 {
     @include p-l;

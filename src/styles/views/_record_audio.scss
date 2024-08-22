@@ -1,0 +1,16 @@
+.record-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 4rem;
+  .recordings-list {
+    text-align: center;
+
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+  }
+}

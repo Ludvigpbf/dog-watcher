@@ -1,7 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import fs from "fs";
 import { VitePWA } from "vite-plugin-pwa";
+
+// Assuming your certs are located in the ./certs directory
+const certPath = path.resolve(__dirname, "cert", "localhost.crt");
+const keyPath = path.resolve(__dirname, "cert", "localhost.key");
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -38,10 +43,15 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "src/assets"),
       "@utils": path.resolve(__dirname, "src/utils"),
       "@interfaces": path.resolve(__dirname, "src/interfaces"),
+      "@api": path.resolve(__dirname, "src/api"),
     },
   },
   server: {
     host: "0.0.0.0",
     port: 5173,
+    https: {
+      cert: fs.readFileSync(certPath),
+      key: fs.readFileSync(keyPath),
+    },
   },
 });

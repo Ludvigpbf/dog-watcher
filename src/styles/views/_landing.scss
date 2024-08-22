@@ -2,11 +2,22 @@
   @include padding-x(0.5rem);
   @include padding-y(1rem);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100%;
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .feed-btn {
+      color: black;
+      margin: 1rem;
+      font-size: 1.3rem;
+    }
+  }
   @include phone(699px) {
     flex-direction: column;
   }
-  
 }

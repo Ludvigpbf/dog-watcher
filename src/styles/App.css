@@ -4,9 +4,21 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100%;
+}
+.landing-section .hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing-section .hero-container .feed-btn {
+  color: black;
+  margin: 1rem;
+  font-size: 1.3rem;
 }
 @media screen and (max-width: 699px) {
   .landing-section {
@@ -14,10 +26,37 @@
   }
 }
 
+.not-found {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.record-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.record-container .recordings-list {
+  text-align: center;
+}
+.record-container .recordings-list ul li {
+  list-style: none;
+}
+
 .header {
   background-color: rgb(214, 221, 224);
   width: 100%;
+  height: 4rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -36,6 +75,7 @@
   width: 100%;
   background-color: rgb(214, 221, 224);
   display: flex;
+  margin-top: auto;
 }
 .footer h1 {
   width: 100%;
@@ -88,7 +128,7 @@
   text-overflow: ellipsis;
 }
 
-.feed-container {
+.feed-section {
   /*   display: flex; */
   flex-direction: column;
   justify-content: center;
@@ -97,11 +137,11 @@
   width: 50%;
 }
 @media screen and (max-width: 699px) {
-  .feed-container {
+  .feed-section {
     width: 100%;
   }
 }
-.feed-container .feed-header {
+.feed-section .feed-header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,24 +151,24 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.feed-container .feed-header .time-span {
+.feed-section .feed-header .time-span {
   color: gray;
 }
-.feed-container .feed-header .feed-status {
+.feed-section .feed-header .feed-status {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
 }
-.feed-container .feed-header .live {
+.feed-section .feed-header .live {
   background-color: green;
 }
-.feed-container .feed-header .not-live {
+.feed-section .feed-header .not-live {
   background-color: red;
 }
-.feed-container .feed-header .feed-controls {
+.feed-section .feed-header .feed-controls {
   margin-left: auto;
 }
-.feed-container .feed-header .feed-controls .controls-btn {
+.feed-section .feed-header .feed-controls .controls-btn {
   padding: 0.2rem 1rem;
   border: solid 1px black;
   border-radius: 0.2rem;
@@ -139,30 +179,70 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-@media screen and (max-width: 699px) {
-  .feed-container .feed-content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-start;
-    height: 100%;
-  }
-  .feed-container .feed-content .feed {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-  }
-  .feed-container .feed-content .no-video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    width: 100%;
-    height: 100%;
-  }
+.feed-section .feed-content {
+  /* @include phone(699px) { */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  height: 100%;
+}
+.feed-section .feed-content .feed {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  border: 10px solid #1faa1d;
+}
+.feed-section .feed-content .broadcast-stream {
+  border: 10px solid #aa401d;
+}
+.feed-section .feed-content .viewer-stream {
+  border: 10px solid #3f68eb;
+}
+.feed-section .feed-content .no-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* } */
+.cta-box {
+  width: 4rem;
+  height: 4rem;
+}
+.cta-box .cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(191, 191, 191);
+}
+.cta-box .cta-btn .icon img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.menu a {
+  color: black;
+  margin: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+}
+.menu a:hover {
+  color: rgb(20, 20, 20);
+  border: 1px solid black;
+  border-radius: 0.2rem;
 }
 
 body {
@@ -173,15 +253,14 @@ body {
 body #root {
   font-size: 16px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 @media screen and (max-width: 699px) {
   body #root {
     font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /*       align-items: center; */
   }
 }/*# sourceMappingURL=App.css.map */

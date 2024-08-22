@@ -1,10 +1,11 @@
+import Nav from "@components/Nav";
+
 type Props = {};
 
 const Header: React.FC<Props> = () => {
   return (
     <header className="header">
-      <h1>Header</h1>
-   
+      <Nav></Nav>
     </header>
   );
 };
